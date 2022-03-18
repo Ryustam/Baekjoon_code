@@ -21,11 +21,7 @@ public class Main {
         int total=0;
         int one = 0;
         int two = 0;
-        while(priorityQueueLowest.peek() != null){
-            if(priorityQueueLowest.size()==1){
-                total += priorityQueueLowest.poll();
-                break;
-            }
+        while(priorityQueueLowest.size() != 1){
             one = priorityQueueLowest.poll();
             two = priorityQueueLowest.poll();
             total += one + two ;
